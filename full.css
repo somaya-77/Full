@@ -1,0 +1,76 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  color: red;
+}
+h1::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background-color: blue;
+  left: 668px;
+  top: 53px;
+}
+h1::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 2px;
+  background-color: green;
+  left: 668px;
+  top: 57px;
+}
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.parent div {
+  text-align: center;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px #777;
+  overflow: hidden;
+}
+.parent div h2 {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.parent .one {
+  background-color: #3535d5;
+}
+.parent .one:hover{
+  box-shadow: 0 0 0 500px #3535d5;
+
+}
+
+.parent .two {
+  background-color: red;
+}
+.parent .two:hover {
+  box-shadow: 0 0 0 500px red;
+}
+.parent .three {
+  background-color: green;
+}
+.parent .three:hover {
+  box-shadow: 0 0 0 500px green;
+}
+
+.parent div p {
+  line-height: 1.8;
+  transition: 0.6s;
+}
+
